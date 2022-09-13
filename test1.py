@@ -13,4 +13,4 @@ class MyPrompt(Cmd):
 
 MyPrompt().cmdloop()
 print("after")
-
+#dit werkt allemaal nice, miss renamen naar main?
