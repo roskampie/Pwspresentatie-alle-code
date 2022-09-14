@@ -11,7 +11,7 @@ class MyPrompt(Cmd):
 #dit werkt nice, lekker bezig
     def do_add(self, inp):
         print("Adding '{}'".format(inp))
-#voeg een manier toe om de {} als nieuwe add te doen (code generation)
+#voeg een manier toe om de {} als nieuwe add te doen (code generation) https://realpython.com/python-exec/
     def help_add(self):
         print('''This will add a new thing''')
 #wat doet dit? vgm help zit vgm in de cmd package
