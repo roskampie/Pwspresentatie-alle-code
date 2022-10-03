@@ -83,11 +83,9 @@ font_size.current(4)
 font_size.grid(row=0,column=1,padx=5)
 
 
-
 bold_logo = tk.PhotoImage(file='resources/bold.png')
 bold_button = ttk.Button(tool_bar, image=bold_logo)
 bold_button.grid(row=0, column=2, padx=5)
-
 
 
 italized_logo = tk.PhotoImage(file='resources/italized.jpg')
@@ -95,11 +93,9 @@ italized_button = ttk.Button(tool_bar,image=italized_logo)
 italized_button.grid(row=0, column=3,padx=5)
 
 
-
 underline_logo = tk.PhotoImage(file='resources/underline.png')
 underline_button=ttk.Button(tool_bar,image=underline_logo)
 underline_button.grid(row=0, column=4,padx=5)
-
 
 
 font_logo = tk.PhotoImage(file='resources/fontcolor.png')
