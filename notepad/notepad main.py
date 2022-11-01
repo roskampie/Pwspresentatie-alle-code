@@ -59,6 +59,8 @@ def read():
 
 def clear():
     print("clearing file")
+    #als de file niet eerder is ge-opend sluit het Programma
+    #if file oppend loop is nodig
     file.truncate(0)
     print("cleared file")
     main()
