@@ -5,19 +5,23 @@ print(os.getcwd())
 file = open("testing.txt", "a")
 
 def main():
-    j = input("read or write?")
+    j = input("what would you like to do? ")
     if j == "read":
-        f = open("testing.txt", "r")
-        i = 1
-        while i == 1:
-            print(f.read())
+        read()
     if j == "write":
         write()
+    if j == "quit" or "exit":
+        print("exiting")
+        exit()
+    if j == "clear":
+        clear()
+    if j == "help":
+        print("these are the options: \n read \n write \n quit / exit \n help \n clear")
+        main()
 
 def write():
     tekst = input("what would you like to type: ")
     nextline = input("moet dit op de volgende lijn? yes/no: ")
-    print(type(tekst))
 
     if nextline == "yes":
         printit = file.write("\n")
@@ -25,27 +29,44 @@ def write():
         strprintit = str(printit)
         exec(strprintit)
         file.flush()
+        read()
+        con()
 
     if nextline == "no":
-        print(type(tekst))
         printit = file.write(tekst)
         strprintit = str(printit)
-        print(type(strprintit))
         exec(strprintit)
         file.flush()
+        read()
+        con()
 
 def con():
     cont = input("write another line? yes/no: ")
     if cont == "yes":
-        main()
+        write()
     if cont == "no":
-        file.close()
-        exit()
+        main()
     else:
         print("please say yes or no ")
+        con()
+
+def read():
+    f = open("testing.txt", "r")
+    i = 1
+    if i == 1:
+        print(f.read())
+        main()
+
+def clear():
+    print("clearing file")
+    file.truncate(0)
+    print("cleared file")
+    main()
+
 x = 1
 if x == 1:
     x = x - 1
-    write()
+    main()
 else:
     con()
+    x = x + 1
