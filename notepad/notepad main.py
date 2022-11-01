@@ -3,7 +3,18 @@ import time
 
 print(os.getcwd())
 file = open("testing.txt", "a")
+
 def main():
+    j = input("read or write?")
+    if j == "read":
+        f = open("testing.txt", "r")
+        i = 1
+        while i == 1:
+            print(f.read())
+    if j == "write":
+        write()
+
+def write():
     tekst = input("what would you like to type: ")
     nextline = input("moet dit op de volgende lijn? yes/no: ")
     print(type(tekst))
@@ -35,13 +46,6 @@ def con():
 x = 1
 if x == 1:
     x = x - 1
-    main()
+    write()
 else:
     con()
-
-f = open("testing.txt", "r")
-i = 1
-while i == 1:
-    print(f.read())
-    time.sleep(5)
-i = 0
