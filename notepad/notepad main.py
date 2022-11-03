@@ -10,7 +10,7 @@ def main():
         read()
     if j == "write":
         write()
-    if j == "quit" or "exit":
+    if j == "quit" or j == "exit":
         print("exiting")
         exit()
     if j == "clear":
