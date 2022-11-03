@@ -1,5 +1,4 @@
 import os.path
-import time
 
 print(os.getcwd())
 file = open("testing.txt", "a")
