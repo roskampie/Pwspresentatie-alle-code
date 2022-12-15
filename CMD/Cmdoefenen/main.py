@@ -63,7 +63,7 @@ class TwonkOS(Cmd):
             print(os.getcwd()+ inp, "Bestaat niet, probeer opniew.")
 
     def do_pyt(self, pyt):
-        'Typ \'pyt\', en dan eronder een simpel python command om die te laten uitvoeren. Belangrijk! typ \'.py\' achter de naam van de file.'
+        'Typ \'pyt\', en dan eronder een simpel python command om die te laten uitvoeren.'
         inp = input()
         print(type(inp))
         exec(inp)
