@@ -16,7 +16,7 @@ class TwonkOS(Cmd):
         if inp == '' :
             print('Dit kan niet, probeer opnieuw: ')
         else:
-            self.prompt = inp + '> '
+            self.prompt = inp + ':~$ '
 
     def do_kazen(self, kazen):
         'Typ dit voor de waarheid'
