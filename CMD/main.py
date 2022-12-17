@@ -36,7 +36,7 @@ class TwonkOS(Cmd):
 
     def do_bwd(self, bwd):
         'Hierbij gaat u een directory terug'
-        bwd = os.chdir('/')
+        bwd = os.chdir('../')
         print('Cwd is veranderd naar:', os.getcwd())
 
     def do_fwd(self, fwd):
