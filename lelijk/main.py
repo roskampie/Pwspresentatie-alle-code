@@ -2,7 +2,7 @@ from cmd import Cmd
 import os
 from time import sleep
 import notepadmain
-
+import twen
 class TwonkOS(Cmd):
     prompt = 'Twonky:~$ '
     intro = "Welcome to the TwonkOS terminal", "Twonk = content", 'Typ \'help\' of \'?\' voor hulp bij alle commands.'
@@ -80,12 +80,21 @@ class TwonkOS(Cmd):
 
     def do_rpf(self, rpf):
         'Typ \'rpf\' en daaronder de naam van de python file om de file te runnen (.py hoeft er niet achter)'
-        rpf = input() + ".py"
-        if os.path.exists(rpf):
-            exec(open(rpf).read())
+        rpf = input()
+        if rpf == "notepadmain":
+            notepadmain.main()
+        elif rpf == "2048":
+            twent.main()
+
+    '''
+        rpf = input()
+        rpf2 = rpf + ".py"
+        if os.path.exists(rpf2):
+            exec(open(rpf2).read())
             print("Python programma is succesvol afgesloten.")
         else:
             print("Python programma niet gevonden, probeer opnieuw.")
+        '''
 
 #    def do_run(self, run):
 #        'Typ \'run\' en daaronder de naam + .(filetype) om de desbetreffend file te runnen'

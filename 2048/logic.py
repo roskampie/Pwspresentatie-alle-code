@@ -1,5 +1,5 @@
 # logic.py to be
-# imported in the 2048.py file
+# imported in the twentyforthyeigth.py file
 
 # importing random package
 # for methods to generate random
