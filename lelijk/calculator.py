@@ -1,17 +1,10 @@
-'''
 def main():
     x = input("put your equation here: ")
-    if x == "a":
-        print("kaas")
+    if x == "exit":
+        print("exiting")
         exit()
     else:
         print(eval(x))
         print("kaasjes")
         main()
 main()
-'''
-
-x = input("put your equation here: ")
-if x == 'a':
-    print("kaas")
-    exit()
