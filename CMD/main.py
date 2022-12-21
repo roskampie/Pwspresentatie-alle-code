@@ -1,7 +1,6 @@
 from cmd import Cmd
 import os
 from time import sleep
-import notepadmain
 
 class TwonkOS(Cmd):
     prompt = 'Twonky:~$ '
